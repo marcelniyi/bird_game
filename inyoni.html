@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Game</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        .container {
+            width: 75%;
+            max-width: 960px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            background-color: #fbf8ec;
+            
+        }
+        .card {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            padding: 20px;
+            background-image: url('fr-block.jpg');
+            margin-top: 20px;
+        }
+
+        .productInfo p{
+            color: #7ea57b;
+        }
+
+        .productInfo p span {
+            color:black;
+        }
+
+        .egg-warehouse {
+            width: 75%;
+            margin: 0 auto;
+            background-color: burlywood;
+        }
+        .bird-info {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Total Eggs: <span id="total"></span></h1>
+        <div class="card">
+            <div class="image"><img class="img" src="https://coin-farm.net/img/birds/green.png"> </div>
+            <div class="productInfo">
+                <span class="bird-name">Blue</span>
+                <p>Productivity: <span class="egg-number">5</span><span>per hour</span></p>
+                <p>Cost: <span class="cost">150</span><span>silver</span></p>
+                <p>Aleardy <span>bout: 3</span></p>
+                <input class="input_value" type="number">pcs. <button type="button" class="btn">BUY</button>
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image"><img src="https://coin-farm.net/img/birds/yellow.png"> </div>
+            <div class="productInfo">
+                <span class="bird-name">Yellow</span>
+                <p>Productivity: <span class='egg-number'>55</span><span>per hour</span></p>
+                <p>Cost: <span class="cost">350</span><span>silver</span></p>
+                <p>Aleardy <span>bout: 3</span></p>
+                 <input class="input_value" type="number">pcs. <button type="button" class="btn">BUY</button>
+
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image"><img src="https://coin-farm.net/img/birds/brown.png"> </div>
+            <div class="productInfo">
+                <span class="bird-name">Green</span>
+                <p>Productivity: <span class="egg-number">200</span><span>per hour</span></p>
+                <p>Cost: <span class="cost">550</span><span>silver</span></p>
+                <p>Aleardy <span>bout: 3</span></p>
+                <input class="input_value" type="number">pcs. <button type="button" class="btn">BUY</button>
+                
+            </div>
+        </div>
+
+        
+    </div>
+
+
+    <div class='egg-warehouse'>
+        <h2 style="text-align: center; color: #ddd">Egg Warehouse</h2>
+        <div class="egg-container" id="egg-container">
+            <div class="bird-info">
+                <div class="bird-img">
+                    <img src="https://coin-farm.net/img/birds/brown.png" alt="bird" width="40" height="40">
+                </div>
+                <div class="bird-detail">
+                    <p>Your 3 birds have laid: 156 eggs</p>
+                </div>
+                
+            </div>
+        </div>
+    
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
